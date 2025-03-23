@@ -1,11 +1,17 @@
+/* כלל עולמי – מבטל גלילה אופקית */
+body {
+  overflow-x: hidden;
+}
+
 .dashboard-container {
   padding: 40px;
   font-family: Arial, sans-serif;
   background-color: rgb(241, 235, 235);
   min-height: 100vh;
+  box-sizing: border-box;
 }
 
-/* Header מאוזן */
+/* Header */
 .dashboard-header {
   display: flex;
   justify-content: space-between;
@@ -34,24 +40,24 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  object-fit: cover;
+  max-width: 100%;
 }
 
-/* כרטיסים בפריסה אופקית */
+/* כרטיסים */
 .card-grid {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px; /* רווח גדול יותר בין הכרטיסים */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
 }
 
 .card {
   background: #f9f9f9;
-  border-radius: 16px; /* פינות מעוגלות יותר */
+  border-radius: 16px;
   padding: 20px;
   text-align: center;
-  flex: none;
-  width: 220px;          /* קביעת רוחב קבוע */
-  height: 120px;         /* גובה גדול יותר */
+  height: 120px;
   transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
   border: 1px solid transparent;
   display: flex;
@@ -60,14 +66,12 @@
   align-items: center;
 }
 
-/* אפקט מסגרת בעת ריחוף */
 .card:hover {
   transform: translateY(-4px);
-  border: 1px solid #a78bfa; /* סגול בהיר */
+  border: 1px solid #a78bfa;
   box-shadow: 0 4px 12px rgba(167, 139, 250, 0.3);
 }
 
-/* אייקון svg בתוך img */
 .icon-img {
   width: 24px;
   height: 24px;
@@ -75,7 +79,6 @@
   display: block;
 }
 
-/* טקסטים */
 .label {
   color: #777;
   font-size: 14px;
@@ -90,18 +93,4 @@
 .right-align {
   direction: rtl;
   text-align: right;
-}
-
-/* סידור הכרטיסים עם leaderboard */
-.card-grid {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 40px; /* רווח מוגדל עוד יותר */
-}
-
-.leaderboard {
-  flex: 1;
-  min-width: 220px;
-  max-width: 300px;
 }

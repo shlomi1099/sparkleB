@@ -1,41 +1,34 @@
 import { useState } from "react";
-import Nav from "react-bootstrap/Nav";
 import "./SideNav.css";
 
-function StackedExample() {
+function SideNav() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNav = () => setIsOpen(!isOpen);
 
   return (
     <>
-      {/* כפתור שמופיע רק כשהתפריט סגור */}
-      <button
-        className={`hamburger-btn ${isOpen ? "hide-btn" : ""}`}
-        onClick={toggleNav}
-      >
+      {/* כפתור פתיחה (המבורגר) */}
+      <button className={`hamburger-btn ${isOpen ? "hide" : ""}`} onClick={toggleNav}>
         ☰
       </button>
 
       {/* תפריט צד */}
       <div className={`side-nav ${isOpen ? "open" : ""}`}>
-        <Nav defaultActiveKey="/home" className="flex-column">
-          <Nav.Link href="/home" className="nav-link" onClick={toggleNav}>
-            Active
-          </Nav.Link>
-          <Nav.Link eventKey="link-1" className="nav-link" onClick={toggleNav}>
-            Link
-          </Nav.Link>
-          <Nav.Link eventKey="link-2" className="nav-link" onClick={toggleNav}>
-            Link
-          </Nav.Link>
-          <Nav.Link eventKey="disabled" disabled className="nav-link disabled">
-            Disabled
-          </Nav.Link>
-        </Nav>
+        <ul className="menu-content">
+          <li><a href="#"><span className="material-symbols-outlined">home</span><span>Home</span></a></li>
+          <li><a href="#"><span className="material-symbols-outlined">dashboard</span><span>Dashboard</span></a></li>
+          <li><a href="#"><span className="material-symbols-outlined">explore</span><span>Explore</span></a></li>
+          <li><a href="#"><span className="material-symbols-outlined">analytics</span><span>Analytics</span></a></li>
+          <li><a href="#"><span className="material-symbols-outlined">settings</span><span>Settings</span></a></li>
+          <li><a href="#"><span className="material-symbols-outlined">person</span><span>Account</span></a></li>
+          <li><a href="#"><span className="material-symbols-outlined">report</span><span>Report</span></a></li>
+          <li><a href="#"><span className="material-symbols-outlined">email</span><span>Contact</span></a></li>
+          <li><a href="#"><span className="material-symbols-outlined">logout</span><span>Logout</span></a></li>
+        </ul>
       </div>
     </>
   );
 }
 
-export default StackedExample;
+export default SideNav;

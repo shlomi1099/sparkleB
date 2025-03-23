@@ -1,4 +1,5 @@
 import React from "react";
+import "./Leaderboard.css";
 
 const Leaderboard = () => {
   const users = [
@@ -10,7 +11,9 @@ const Leaderboard = () => {
   return (
     <div className="card shadow rounded-4 p-4" style={{ width: "320px" }}>
       {/* כותרת עליונה */}
-      <div className="text-uppercase text-muted small fw-semibold mb-3">Leaderboard</div>
+      <div className="text-uppercase text-muted small fw-semibold mb-3">
+        Leaderboard
+      </div>
 
       {/* מקום ראשון */}
       <div className="text-center">
@@ -19,7 +22,12 @@ const Leaderboard = () => {
         {/* אייקון זוכה במקום תמונה */}
         <div
           className="mx-auto rounded-circle bg-warning d-flex align-items-center justify-content-center"
-          style={{ width: "80px", height: "80px", fontSize: "32px", color: "white" }}
+          style={{
+            width: "80px",
+            height: "80px",
+            fontSize: "32px",
+            color: "white",
+          }}
         >
           🏆
         </div>
