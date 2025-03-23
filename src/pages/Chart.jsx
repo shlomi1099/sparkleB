@@ -5,8 +5,8 @@ export default function Chart() {
 
 
     return (
-        <div style={{width:"100vw",margin:"0px auto"}}>
-            <div style={{ margin: "0 auto" ,width:"95%", backgroundColor: ''}}>
+        <div style={{width:"100vw",}}>
+            <div style={{ margin: "0 auto" ,width:"95%", backgroundColor: '',margin:"0px auto"}}>
                 <select style={{ width: "100px", padding: "5px" }} onChange={(val)=>setChange(val.target.value)}>
                     <option  value="3" >today</option>
                     <option value="4">yesterday</option>

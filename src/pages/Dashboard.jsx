@@ -1,5 +1,6 @@
 import React from "react";
 import "./Dashboard.css";
+import Chart from '../pages/Chart'
 
 export default function Dashboard() {
   return (
@@ -53,6 +54,8 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
+      <Chart/>
+
     </div>
   );
 }
