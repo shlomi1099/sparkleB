@@ -1,0 +1,67 @@
+/* SideNav.css */
+
+/* תפריט צד - מוסתר כברירת מחדל */
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: -220px;
+  width: 200px;
+  height: 100vh;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-right: 1px solid #000000;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.side-nav.open {
+  left: 0;
+}
+
+/* כפתור המבורגר */
+.hamburger-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 32px; /* מוגדל מ־26px */
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+  padding: 10px 14px; /* טיפה יותר מרווח */
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+/* צבע כשרק עולים עם העכבר */
+.hamburger-btn:hover {
+  background-color: #e2e6ea;
+}
+
+/* הסתרת הכפתור כשהתפריט פתוח */
+.hide-btn {
+  display: none;
+}
+
+/* קישורים */
+.side-nav .nav-link {
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.side-nav .nav-link:hover {
+  background-color: #e2e6ea;
+  color: #000;
+}
+
+.side-nav .nav-link.active {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.side-nav .nav-link.disabled {
+  color: #6c757d;
+  pointer-events: none;
+}
