@@ -7,7 +7,8 @@ export default function App() {
   return (
     <div>
        <StackedExample />
-      <Dashboard/>
+       <Dashboard/>
+       
     </div>
   )
 }
