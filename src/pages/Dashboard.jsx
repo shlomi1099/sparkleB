@@ -9,9 +9,9 @@ export default function Dashboard() {
       <div className="dashboard-header horizontal">
         <div className="header-text">
           <h1>
-            שלום <span className="highlight">SEXI</span>,
+            <span className="highlight">hello friend</span>
           </h1>
-          <p className="subtext">YOU LOOK WUNDERFULL TODAY</p>
+          <p className="subtext">how are you?</p>
         </div>
         <img
           src="https://i.pravatar.cc/300"
@@ -25,7 +25,7 @@ export default function Dashboard() {
         <div className="card">
           <div className="card-content">
             <div className="icon mail"></div>
-            <p className="label">MAMASITA</p>
+            <p className="label">UnAssigned</p>
             <p className="value">350</p>
           </div>
         </div>
@@ -33,7 +33,7 @@ export default function Dashboard() {
         <div className="card">
           <div className="card-content">
             <div className="icon user"></div>
-            <p className="label">SENIORITA</p>
+            <p className="label">Assigned</p>
             <p className="value">450</p>
           </div>
         </div>
@@ -41,7 +41,7 @@ export default function Dashboard() {
         <div className="card">
           <div className="card-content">
             <div className="icon check"></div>
-            <p className="label">YES BABY</p>
+            <p className="label">Closed</p>
             <p className="value">3500</p>
           </div>
         </div>
@@ -49,7 +49,7 @@ export default function Dashboard() {
         <div className="card">
           <div className="card-content">
             <div className="icon message"></div>
-            <p className="label">SINIMANAA</p>
+            <p className="label">channels</p>
             <p className="value">3</p>
           </div>
         </div>
