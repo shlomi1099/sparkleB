@@ -1,0 +1,39 @@
+.clock-wrapper {
+    display: flex;
+    flex-direction: row; /* 🟢 היה row — עכשיו column כדי שהתאריך יהיה מתחת */
+    align-items: flex-end;
+    justify-content: center;  /* יישור לימין */
+    background-color: #f5ebeb; /* 🟢 צבע רקע כמו כל העמוד */
+    font-family: Arial, sans-serif;
+    padding: 10px 20px;
+    border-radius: 0; /* אין צורך ברדיוס אם זה חלק מה-top-bar */
+  }
+    
+  .clock {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+  }
+    
+  .clock__box {
+    background-color: #838fdc;
+    color: white;
+    font-size: 1.2rem;
+    padding: 6px 10px;
+    border-radius: 8px;
+    min-width: 35px;
+    text-align: center;
+  }
+    
+  .clock__colon {
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+  }
+    
+  .clock__date {
+    font-size: 0.75rem;
+    color: #555;
+    margin-top: 4px;
+    text-align: right;
+  }
+  
