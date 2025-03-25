@@ -1,7 +1,7 @@
 .clock-wrapper {
     display: flex;
     flex-direction: row; /* 🟢 היה row — עכשיו column כדי שהתאריך יהיה מתחת */
-    align-items: flex-end;
+    
     justify-content: center;  /* יישור לימין */
     background-color: #f5ebeb; /* 🟢 צבע רקע כמו כל העמוד */
     font-family: Arial, sans-serif;
@@ -16,8 +16,8 @@
   }
     
   .clock__box {
-    background-color: #838fdc;
-    color: white;
+    
+    color: rgb(0, 0, 0);
     font-size: 1.2rem;
     padding: 6px 10px;
     border-radius: 8px;
